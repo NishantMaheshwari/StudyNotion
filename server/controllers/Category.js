@@ -27,13 +27,13 @@ exports.createCategory = async (req, res) => {
 
 exports.showAllCategories = async (req, res) => {
 	try {
-		const allCategorys = await Category.find(
+		const allCategories = await Category.find(
 			{},
 			{ name: true, description: true }
 		);
 		res.status(200).json({
 			success: true,
-			data: allCategorys,
+			data: allCategories,
 		});
 	} catch (error) {
 		return res.status(500).json({
@@ -68,7 +68,6 @@ exports.categoryPageDetails = async (req, res) => {
                                          .exec();
 
             //get top 10 selling courses
-            //HW - write it on your own
 
             //return response
             return res.status(200).json({

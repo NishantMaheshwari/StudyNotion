@@ -20,9 +20,7 @@ root.render(
     <BrowserRouter>
         <App />
         <Toaster/>
-      </BrowserRouter>
+    </BrowserRouter>
   </Provider>
-    
-    
   </React.StrictMode>
 );
